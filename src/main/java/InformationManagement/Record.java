@@ -7,6 +7,7 @@ public class Record {
     private Date dateOfService;
     private String typeOfService;
     private String notes;
+    private Date dateAdded = new Date();
 
     // Constructor
     public Record(String healthcareProvider, Date dateOfService, String typeOfService, String notes) {
