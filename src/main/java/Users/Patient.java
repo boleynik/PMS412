@@ -1,6 +1,7 @@
 package Users;
 
 import InformationManagement.Record;
+import MedicationManagement.Medication;
 
 import java.util.Date;
 import java.util.List;
@@ -10,11 +11,8 @@ public class Patient extends User {
     private String sex;
     private double weightInPounds;
     private double heightInFeet;
-
-
-
     private List<Record> records;
-
+    private List<Medication> medications;
     /**
      * Retrieves the birth date of the person.
      *
@@ -97,29 +95,20 @@ public class Patient extends User {
     }
 
     /**
+     * Retrieves a list of medications associated with the patient.
+     *
+     * @return A List of Medication objects representing the medications prescribed to the patient.
+     */
+    public List<Medication> getMedications() {
+        return medications;
+    }
+
+    /**
      * Adds a new health record to the patient's list of records.
      *
      * @param record The health record to be added to the patient's records.
      */
-    public void addRecord(Record record) {
-        // Implementation details...
-    }
 
-    /**
-     * Removes a specific health record from the patient's list.
-     *
-     * @param record The health record to be removed from the patient's records.
-     * @throws IllegalArgumentException If the specified record is not present in the patient's records or if the record is null.
-     */
-    public void removeRecord(Record record) {
-        // Implementation details...
-    }
-
-    /**
-     * Retrieves the most recent health record for the patient.
-     *
-     * @return The latest health record of the patient.
-     */
     public Record getLatestRecord() {
         // Implementation details...
     }
