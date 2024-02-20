@@ -1,5 +1,6 @@
 package MedicationManagement;
 
+import java.util.Date;
 import Users.Caregiver;
 
 public class Medication {
