@@ -96,4 +96,33 @@ public class Patient extends User {
         return records;
     }
 
+    /**
+     * Adds a new health record to the patient's list of records.
+     *
+     * @param record The health record to be added to the patient's records.
+     */
+    public void addRecord(Record record) {
+        // Implementation details...
+    }
+
+    /**
+     * Removes a specific health record from the patient's list.
+     *
+     * @param record The health record to be removed from the patient's records.
+     * @throws IllegalArgumentException If the specified record is not present in the patient's records or if the record is null.
+     */
+    public void removeRecord(Record record) {
+        // Implementation details...
+    }
+
+    /**
+     * Retrieves the most recent health record for the patient.
+     *
+     * @return The latest health record of the patient.
+     */
+    public Record getLatestRecord() {
+        // Implementation details...
+    }
+
+
 }
