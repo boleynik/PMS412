@@ -9,11 +9,18 @@ public class Record {
     private String notes;
 
     // Constructor
-    public Record(String patientName, String healthcareProvider, Date dateOfService, String typeOfService, String notes) {
+    public Record(String healthcareProvider, Date dateOfService, String typeOfService, String notes) {
         this.healthcareProvider = healthcareProvider;
         this.dateOfService = dateOfService;
         this.typeOfService = typeOfService;
         this.notes = notes;
+    }
+
+    public Record(String healthcareProvider, Date dateOfService, String typeOfService){
+        this.healthcareProvider = healthcareProvider;
+        this.dateOfService = dateOfService;
+        this.typeOfService = typeOfService;
+        this.notes = "";
     }
 
     // Getters and Setters
