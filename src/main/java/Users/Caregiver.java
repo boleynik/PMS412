@@ -1,5 +1,6 @@
 package Users;
 
+import MedicationManagement.*;
 import InformationManagement.Record;
 
 public class Caregiver extends User {
