@@ -18,7 +18,7 @@ public class Patient extends User {
      *
      * @return The birth date of the person as a Date object.
      */
-    public Date getBirthDate() {
+    public GregorianCalendar getBirthDate() {
         return birthDate;
     }
 
@@ -27,7 +27,7 @@ public class Patient extends User {
      *
      * @param birthDate The new birth date to be set for the person.
      */
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(GregorianCalendar birthDate) {
         this.birthDate = birthDate;
     }
 
