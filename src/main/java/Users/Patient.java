@@ -3,11 +3,11 @@ package Users;
 import InformationManagement.Record;
 import MedicationManagement.Medication;
 
-import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 public class Patient extends User {
-    private Date birthDate;
+    private GregorianCalendar birthDate;
     private String sex;
     private double weightInPounds;
     private double heightInFeet;
@@ -107,11 +107,22 @@ public class Patient extends User {
      * Adds a new health record to the patient's list of records.
      *
      * @param record The health record to be added to the patient's records.
+     * @return a boolean representing whether the medication was successfully added
      */
 
-    public Record getLatestRecord() {
+    public Boolean addRecord(Record record) {
         // Implementation details...
     }
 
+    /**
+     * Adds a new medication to the patient's list of medications.
+     *
+     * @param medication The medication to be added to the patient's list of medications.
+     * @return a boolean representing whether the medication was successfully added
+     */
+
+    public Boolean addMedication(Medication medication) {
+        // Implementation details...
+    }
 
 }
