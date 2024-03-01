@@ -78,22 +78,13 @@ public class Caregiver extends User {
     }
 
     /**
-     * Removes a specific health record from the specified patient's list of records.
-     *
-     * @param record The health record to be removed from the patient's records.
-     * @param patient The Patient object from whom the health record is being removed.
-     * @throws IllegalArgumentException If the specified record is not present in the patient's records, if the record is null, or if the patient is null.
-     */
-    public void removeRecord(Record record, Patient patient) {
-        // Implementation details...
-    }
-
-
-    /**
      * Retrieves the most recent health record for the patient.
      *
      * @return The latest health record of the patient.
      */
+    public String getLatestRecord(Patient patient){
+        return "latest record";
+    }
 
     /**
      * Assigns a new medication to the specified patient, adding it to the list of prescribed medications.
@@ -104,16 +95,7 @@ public class Caregiver extends User {
      */
     public void assignMedication(Medication medication, Patient patient) {
         // Implementation details...
+        patient.addMedication(medication);
     }
 
-    /**
-     * Removes a specific medication from the specified patient's list of prescribed medications.
-     *
-     * @param medication The Medication object representing the medication to be removed.
-     * @param patient The Patient object from whom the medication is being removed.
-     * @throws IllegalArgumentException If the specified medication is not present in the patient's list of prescribed medications, if the medication is null, or if the patient is null.
-     */
-    public void removeMedication(Medication medication, Patient patient) {
-        // Implementation details...
-    }
 }

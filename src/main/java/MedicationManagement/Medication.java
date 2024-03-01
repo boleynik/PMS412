@@ -1,21 +1,20 @@
 package MedicationManagement;
 
-import java.util.Date;
 import Users.Caregiver;
 
 public class Medication {
     private String name;
     private double dosage;
     private String frequency;
-    private Date prescriptionDate;
-    private Date expirationDate;
+    private String prescriptionDate;
+    private String expirationDate;
     private Caregiver prescribingDoctor;
     private String instructions;
     private boolean isOverTheCounter;
     private boolean isGeneric;
     private String notes;
 
-    public Medication(String name, double dosage, String frequency, Date prescriptionDate, Date expirationDate,
+    public Medication(String name, double dosage, String frequency, String prescriptionDate, String expirationDate,
                       Caregiver prescribingDoctor, String instructions, boolean isOverTheCounter,
                       boolean isGeneric, String notes) {
         this.name = name;
@@ -89,7 +88,7 @@ public class Medication {
      *
      * @return The prescription date as a Date object.
      */
-    public Date getPrescriptionDate() {
+    public String getPrescriptionDate() {
         return prescriptionDate;
     }
 
@@ -98,7 +97,7 @@ public class Medication {
      *
      * @param prescriptionDate The new prescription date to be set for the medication.
      */
-    public void setPrescriptionDate(Date prescriptionDate) {
+    public void setPrescriptionDate(String prescriptionDate) {
         this.prescriptionDate = prescriptionDate;
     }
 
@@ -107,7 +106,7 @@ public class Medication {
      *
      * @return The expiration date as a Date object.
      */
-    public Date getExpirationDate() {
+    public String getExpirationDate() {
         return expirationDate;
     }
 
@@ -116,7 +115,7 @@ public class Medication {
      *
      * @param expirationDate The new expiration date to be set for the medication.
      */
-    public void setExpirationDate(Date expirationDate) {
+    public void setExpirationDate(String expirationDate) {
         this.expirationDate = expirationDate;
     }
 

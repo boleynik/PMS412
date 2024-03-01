@@ -22,6 +22,7 @@ public class UserManagement{
      */
     public static Boolean addEmployee(String user_id, Caregiver employee_info){
         //Implemnentation details...
+        return true;
     }
 
     /**
@@ -33,6 +34,7 @@ public class UserManagement{
      */
     public static Boolean addPatient(String user_id, Patient patient_info){
         //Implemnentation details...
+        return true;
     }
 
     /**
@@ -47,7 +49,7 @@ public class UserManagement{
 
     /**
      * Gets a Caregiver object corresponding to the employee's user ID
-     * 
+     *
      * @param user_id the user's user login
      * @return the Caregiver object representing the patient
      */

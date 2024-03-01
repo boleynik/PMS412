@@ -36,7 +36,16 @@ public class Main {
         caregiver1.addRecord(record1, patient1);
         System.out.println(patient1.getRecords());
 
-        caregiver1
+        caregiver1.getLatestRecord(patient1);
+
+        Medication med1 = new Medication("Mucinex", 10, "Twice a day", "2024-02-28",
+                "2024-03-07", caregiver1, "Take once before breakfast and once before bed",
+                true, true, "N/A");
+
+        caregiver1.assignMedication(med1, patient1);
+        System.out.println(patient1meds);
+
+
 
 
     }
