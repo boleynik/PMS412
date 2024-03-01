@@ -6,6 +6,11 @@ import InformationManagement.Record;
 public class Caregiver extends User {
     private String department;
 
+    public Caregiver(int userID, String email, double phoneNumber, String department) {
+        super(userID, email, phoneNumber);
+        this.department = department;
+    }
+
     /**
      * Retrieves the department to which the user belongs.
      *

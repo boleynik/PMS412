@@ -5,6 +5,11 @@ public class User {
     private String email;
     private double phoneNumber;
 
+    public User(int userID, String email, double phoneNumber) {
+        this.userID = userID;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
 
     /**
      * Retrieves the user ID associated with this user.

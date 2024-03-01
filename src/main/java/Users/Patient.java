@@ -12,6 +12,18 @@ public class Patient extends User {
     private double weightInPounds;
     private double heightInFeet;
     private List<Record> records;
+
+    public Patient(int userID, String email, double phoneNumber, GregorianCalendar birthDate, String sex, double weightInPounds, double heightInFeet, List<Record> records, List<Medication> medications)
+    {
+        super(userID, email, phoneNumber);
+        this.birthDate = birthDate;
+        this.sex = sex;
+        this.weightInPounds = weightInPounds;
+        this.heightInFeet = heightInFeet;
+        this.records = records;
+        this.medications = medications;
+    }
+
     private List<Medication> medications;
     /**
      * Retrieves the birth date of the person.
