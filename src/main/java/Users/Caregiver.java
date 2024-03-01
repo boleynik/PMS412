@@ -3,12 +3,16 @@ package Users;
 import MedicationManagement.*;
 import InformationManagement.Record;
 
+import java.util.List;
+
 public class Caregiver extends User {
     private String department;
+    private List<Patient> patients;
 
-    public Caregiver(int userID, String email, double phoneNumber, String department) {
+    public Caregiver(int userID, String email, String phoneNumber, String department, List<Patient> patients) {
         super(userID, email, phoneNumber);
         this.department = department;
+        this.patients = patients;
     }
 
     /**
@@ -29,14 +33,24 @@ public class Caregiver extends User {
         this.department = department;
     }
 
+    public List<Patient> getPatients() {
+        return patients;
+    }
+
+    public void setPatients(List<Patient> patients) {
+        this.patients = patients;
+    }
+
     /**
      * Assigns a patient to the caregiver, updating the caregiver's client list.
      *
      * @param patient The patient to be assigned to the caregiver.
      * @throws IllegalArgumentException If the patient is already assigned to the caregiver or if the patient is null.
      */
+
     public void assignPatient(Patient patient) {
         // Implementation details...
+        patients.add(patient);
     }
 
     /**

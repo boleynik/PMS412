@@ -3,9 +3,9 @@ package Users;
 public class User {
     private int userID;
     private String email;
-    private double phoneNumber;
+    private String phoneNumber;
 
-    public User(int userID, String email, double phoneNumber) {
+    public User(int userID, String email, String phoneNumber) {
         this.userID = userID;
         this.email = email;
         this.phoneNumber = phoneNumber;
@@ -52,7 +52,7 @@ public class User {
      *
      * @return The phone number as a double.
      */
-    public double getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
@@ -61,7 +61,7 @@ public class User {
      *
      * @param phoneNumber The new phone number to be set.
      */
-    public void setPhoneNumber(double phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 

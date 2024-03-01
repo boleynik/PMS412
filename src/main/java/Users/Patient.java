@@ -3,17 +3,19 @@ package Users;
 import InformationManagement.Record;
 import MedicationManagement.Medication;
 
-import java.util.GregorianCalendar;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Patient extends User {
-    private GregorianCalendar birthDate;
+    private String birthDate;
     private String sex;
     private double weightInPounds;
     private double heightInFeet;
-    private List<Record> records;
+    private ArrayList<Record> records;
 
-    public Patient(int userID, String email, double phoneNumber, GregorianCalendar birthDate, String sex, double weightInPounds, double heightInFeet, List<Record> records, List<Medication> medications)
+    private ArrayList<Medication> medications;
+
+    public Patient(int userID, String email, String phoneNumber, String birthDate, String sex, double weightInPounds, double heightInFeet, ArrayList<Record> records, ArrayList<Medication> medications)
     {
         super(userID, email, phoneNumber);
         this.birthDate = birthDate;
@@ -24,13 +26,13 @@ public class Patient extends User {
         this.medications = medications;
     }
 
-    private List<Medication> medications;
+
     /**
      * Retrieves the birth date of the person.
      *
      * @return The birth date of the person as a Date object.
      */
-    public GregorianCalendar getBirthDate() {
+    public String getBirthDate() {
         return birthDate;
     }
 
@@ -39,7 +41,7 @@ public class Patient extends User {
      *
      * @param birthDate The new birth date to be set for the person.
      */
-    public void setBirthDate(GregorianCalendar birthDate) {
+    public void setBirthDate(String birthDate) {
         this.birthDate = birthDate;
     }
 

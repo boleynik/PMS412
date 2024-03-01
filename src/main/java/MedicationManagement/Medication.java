@@ -15,6 +15,21 @@ public class Medication {
     private boolean isGeneric;
     private String notes;
 
+    public Medication(String name, double dosage, String frequency, Date prescriptionDate, Date expirationDate,
+                      Caregiver prescribingDoctor, String instructions, boolean isOverTheCounter,
+                      boolean isGeneric, String notes) {
+        this.name = name;
+        this.dosage = dosage;
+        this.frequency = frequency;
+        this.prescriptionDate = prescriptionDate;
+        this.expirationDate = expirationDate;
+        this.prescribingDoctor = prescribingDoctor;
+        this.instructions = instructions;
+        this.isOverTheCounter = isOverTheCounter;
+        this.isGeneric = isGeneric;
+        this.notes = notes;
+    }
+
     /**
      * Retrieves the name of the medication.
      *
