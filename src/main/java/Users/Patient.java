@@ -126,6 +126,7 @@ public class Patient extends User {
 
     public Boolean addRecord(Record record) {
         // Implementation details...
+        records.add(record);
     }
 
     /**
@@ -137,6 +138,7 @@ public class Patient extends User {
 
     public Boolean addMedication(Medication medication) {
         // Implementation details...
+        medications.add(medication);
     }
 
 }

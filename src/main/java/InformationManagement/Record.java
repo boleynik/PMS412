@@ -4,20 +4,20 @@ import java.util.Date;
 
 public class Record {
     private String healthcareProvider;
-    private Date dateOfService;
+    private String dateOfService;
     private String typeOfService;
     private String notes;
     private Date dateAdded = new Date();
 
     // Constructor
-    public Record(String healthcareProvider, Date dateOfService, String typeOfService, String notes) {
+    public Record(String healthcareProvider, String dateOfService, String typeOfService, String notes) {
         this.healthcareProvider = healthcareProvider;
         this.dateOfService = dateOfService;
         this.typeOfService = typeOfService;
         this.notes = notes;
     }
 
-    public Record(String healthcareProvider, Date dateOfService, String typeOfService){
+    public Record(String healthcareProvider, String dateOfService, String typeOfService){
         this.healthcareProvider = healthcareProvider;
         this.dateOfService = dateOfService;
         this.typeOfService = typeOfService;
@@ -34,11 +34,11 @@ public class Record {
         this.healthcareProvider = healthcareProvider;
     }
 
-    public Date getDateOfService() {
+    public String getDateOfService() {
         return dateOfService;
     }
 
-    public void setDateOfService(Date dateOfService) {
+    public void setDateOfService(String dateOfService) {
         this.dateOfService = dateOfService;
     }
 

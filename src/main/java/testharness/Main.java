@@ -30,5 +30,14 @@ public class Main {
 
         caregiver1.assignPatient(patient1);
 
+        Record record1 = new Record("Geisinger", "2024-02-28", "General Checkup",
+                "Vitals normal, health is overall good, except for a small cold. Prescribing Mucinex for runny nose.");
+
+        caregiver1.addRecord(record1, patient1);
+        System.out.println(patient1.getRecords());
+
+        caregiver1
+
+
     }
 }

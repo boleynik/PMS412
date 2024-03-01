@@ -61,6 +61,7 @@ public class Caregiver extends User {
      */
     public void unassignPatient(Patient patient) {
         // Implementation details...
+        patients.remove(patient);
     }
 
     /**
@@ -72,6 +73,8 @@ public class Caregiver extends User {
      */
     public void addRecord(Record record, Patient patient) {
         // Implementation details...
+        patient.addRecord(record);
+
     }
 
     /**
