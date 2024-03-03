@@ -21,8 +21,14 @@ public class UserManagement{
      * @return a boolean representing whether the employee was successfully added
      */
     public static Boolean addEmployee(String user_id, Caregiver employee_info){
-        //Implemnentation details...
+        if (Employees.containsKey(user_id)) {
+            // Employee with this user_id already exists
+            return false;
+        } else {
+            Employees.put(user_id, employee_info);
+       
         return true;
+    }
     }
 
     /**
@@ -33,8 +39,13 @@ public class UserManagement{
      * @return a boolean representing whether the patient was successfully added
      */
     public static Boolean addPatient(String user_id, Patient patient_info){
-        //Implemnentation details...
+        if (Patients.containsKey(user_id)) {
+            // Patient with this user_id already exists
+            return false;
+        } else {
+            Patients.put(user_id, patient_info);
         return true;
+    }
     }
 
     /**
@@ -44,7 +55,7 @@ public class UserManagement{
      * @return the Patient object representing the patient
      */
     public static Patient getPatient(String user_id){
-        //Implemnentation details...
+        return Patients.get(user_id);
     }
 
     /**
@@ -54,7 +65,7 @@ public class UserManagement{
      * @return the Caregiver object representing the patient
      */
     public static Caregiver getEmployee(String user_id){
-        //Implemnentation details...
+        return Employees.get(user_id);
     }
 
 }
