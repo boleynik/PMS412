@@ -4,6 +4,7 @@ import java.util.GregorianCalendar;
 import java.util.HashMap;
 
 import InformationManagement.InformationView;
+import Users.User;
 
 public class Authenticate {
 
@@ -27,8 +28,9 @@ public class Authenticate {
      * @param password the employee's password
      * @return a boolean representing whether authentication passes
      */
-    public static InformationView authenticateEmployee(String employee_id, String password){
+    public static boolean authenticateEmployee(String employee_id, String password){
         // Implementation details... 
+        return true;
     }
     
     /**
@@ -39,8 +41,10 @@ public class Authenticate {
      * @param password the patient's password
      * @return a boolean representing whether authentication passes
      */
-    public static InformationView authenticatePatient(String patient_id, GregorianCalendar dob, String password){
+    public static boolean authenticatePatient(String patient_id, GregorianCalendar dob, String password){
         // Implementation details... 
+        return true;
+        
     }
 
     /**
@@ -53,6 +57,7 @@ public class Authenticate {
      */
     public static Boolean changeEmployeePassword(String employee_id, String old_password, String new_password){
         // Implementation details... 
+        return true;
     }
 
     /**
@@ -66,6 +71,7 @@ public class Authenticate {
      */
     public static Boolean changePatientPassword(String patient_id, GregorianCalendar dob, String old_password, String new_password){
         // Implementation details... 
+        return true;
     }
 
     /**
@@ -77,6 +83,7 @@ public class Authenticate {
      */
     public static Boolean addNewEmployee(String employee_id, String password){
         // Implementation details... 
+        return true;
     }
 
     /**
@@ -89,6 +96,7 @@ public class Authenticate {
      */
     public static Boolean addNewPatient(String patient_id, GregorianCalendar dob, String password){
         // Implementation details... 
+        return true;
     }
 
     /**
@@ -99,6 +107,7 @@ public class Authenticate {
      */
     public static Boolean employeeExists(String employee_id){
         //Implementation details...
+        return true;
     }
 
     /**
@@ -109,5 +118,6 @@ public class Authenticate {
      */
     public static Boolean patientExists(String patient_id){
         //Implementation details...
+        return true;
     }
 }
