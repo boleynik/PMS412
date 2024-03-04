@@ -1,6 +1,6 @@
 package MedicationManagement;
 
-import User.Caregiver;
+import Users.Caregiver;
 
 public class Medication {
     private String name;
