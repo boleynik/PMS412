@@ -1,7 +1,7 @@
 package UserManagement;
 
-import User.Caregiver;
-import User.Patient;
+import Users.Caregiver;
+import Users.Patient;
 import InformationManagement.Record;
 import MedicationManagement.Medication;
 import java.util.ArrayList;
