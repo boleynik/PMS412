@@ -1,20 +1,19 @@
-package MedicationManagement;
+package MedicationManagement;// Import statements and package declaration remain the same
 
-import Users.Caregiver;
-import Users.Patient;
+import User.Caregiver;
+import User.Patient;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TestMedication {
 
-    public static void main(String[] args) {
-
+    public void testMedication() {
         // Create a list of patients
         List<Patient> patients = new ArrayList<>();
 
         // Create a Caregiver object for prescribing
-        Caregiver prescribingDoctor = new Caregiver(101, "Dr. Smith", "General Medicine", "janedoe@gmail.com",  patients);
+        Caregiver prescribingDoctor = new Caregiver(101, "Dr. Smith", "General Medicine", "janedoe@gmail.com", patients);
 
         // Create a Medication object
         Medication medication = new Medication("Aspirin", 100, "Twice a day",
@@ -39,11 +38,8 @@ public class TestMedication {
         medication.setFrequency("Three times a day");
         medication.setPrescriptionDate("2024-03-15");
         medication.setExpirationDate("2024-05-01");
-        medication.setPrescribingDoctor(new Caregiver(102, "Dr. Johnson", "Internal Medicine", "johndoe@gmail.com",  patients));
+        medication.setPrescribingDoctor(new Caregiver(102, "Dr. Johnson", "Internal Medicine", "johndoe@gmail.com", patients));
         medication.setInstructions("Take after meals");
-        medication.setOverTheCounter(true);
-        medication.setGeneric(false);
-        medication.setNotes("Keep out of reach of children");
 
         // Display updated medication information
         System.out.println("\nUpdated Medication Information:");
@@ -60,9 +56,8 @@ public class TestMedication {
 
         // Test additional medication interaction methods
         // Assuming you have implemented these methods in the Medication class
-        // medication.takeMedication();
-        // medication.refillMedication();
-        // medication.checkExpiration();
+        medication.takeMedication();
+        medication.refillMedication();
+        medication.checkExpiration();
     }
-
 }
