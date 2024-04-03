@@ -1,6 +1,8 @@
 package Users;
 
-public class User {
+import UserManagement.UserManagement;
+
+public class User extends UserManagement {
     private int userID;
     private String email;
     private String phoneNumber;
