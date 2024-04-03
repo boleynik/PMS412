@@ -1,9 +1,9 @@
 package UserManagement;
 
-import Users.Caregiver;
-import Users.Patient;
-import InformationManagement.Record;
-import MedicationManagement.Medication;
+import Models.Caregiver;
+import Models.Patient;
+import Models.Record;
+import Models.Medication;
 import java.util.ArrayList;
 
 public class UserManagementTest {

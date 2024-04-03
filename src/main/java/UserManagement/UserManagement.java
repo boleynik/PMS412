@@ -1,12 +1,9 @@
 package UserManagement;
 
-import java.util.GregorianCalendar;
 import java.util.HashMap;
-import java.util.List;
 
-import MedicationManagement.Medication;
-import Users.Caregiver;
-import Users.Patient;
+import Models.Caregiver;
+import Models.Patient;
 
 public class UserManagement{
     

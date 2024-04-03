@@ -1,12 +1,10 @@
 package testharness;
 
-import MedicationManagement.Medication;
-import Users.Caregiver;
-import Users.Patient;
-import Users.User;
-import InformationManagement.Record;
+import Models.Medication;
+import Models.Caregiver;
+import Models.Patient;
+import Models.Record;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
 

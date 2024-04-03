@@ -1,6 +1,4 @@
-package MedicationManagement;
-
-import Users.Caregiver;
+package Models;
 
 public class Medication {
     private String name;

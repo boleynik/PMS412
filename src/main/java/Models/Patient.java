@@ -1,7 +1,4 @@
-package Users;
-
-import InformationManagement.Record;
-import MedicationManagement.Medication;
+package Models;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package MedicationManagement;// Import statements and package declaration remain the same
+package Models;// Import statements and package declaration remain the same
 
 import User.Caregiver;
 import User.Patient;

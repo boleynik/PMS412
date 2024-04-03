@@ -1,7 +1,4 @@
-package Users;
-
-import MedicationManagement.*;
-import InformationManagement.Record;
+package Models;
 
 import java.util.List;
 

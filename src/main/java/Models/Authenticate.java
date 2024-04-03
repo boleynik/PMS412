@@ -1,10 +1,7 @@
-package Authentication;
+package Models;
 
 import java.util.GregorianCalendar;
 import java.util.HashMap;
-
-import InformationManagement.InformationView;
-import Users.User;
 
 public class Authenticate {
 

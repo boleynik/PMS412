@@ -1,5 +1,7 @@
 package Authentication;
 
+import Models.Authenticate;
+
 import java.util.GregorianCalendar;
 
 public class AuthenticateTests {

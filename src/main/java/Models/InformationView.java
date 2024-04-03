@@ -1,8 +1,4 @@
-package InformationManagement;
-
-import Users.User;
-import Users.Patient;
-import Users.Caregiver;
+package Models;
 
 public class InformationView {
     User authProfile;
