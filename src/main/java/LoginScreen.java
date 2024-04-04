@@ -4,6 +4,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import java.awt.GridBagLayout;
+import java.awt.GridBagConstraints;
 import java.awt.Toolkit;
 
 public class LoginScreen {
@@ -12,6 +14,7 @@ public class LoginScreen {
 
         window.setSize((int) Toolkit.getDefaultToolkit().getScreenSize().width * 3 / 4,
                 (int) Toolkit.getDefaultToolkit().getScreenSize().height * 3 / 4);
+        window.setLocationRelativeTo(null);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JTextField textField1 = new JTextField(12);
@@ -29,8 +32,8 @@ public class LoginScreen {
         loginPanel.add(new JLabel("Password:"));
         loginPanel.add(textField2);
         loginPanel.add(button);
-
-        window.add(loginPanel);
+        window.setLayout(new GridBagLayout());
+        window.add(loginPanel, new GridBagConstraints());
         window.setVisible(true);
     }
 }
