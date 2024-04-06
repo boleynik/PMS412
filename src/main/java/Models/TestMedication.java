@@ -1,7 +1,6 @@
 package Models;// Import statements and package declaration remain the same
 
-import User.Caregiver;
-import User.Patient;
+
 
 import java.util.ArrayList;
 import java.util.List;
