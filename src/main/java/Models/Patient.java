@@ -10,6 +10,8 @@ public class Patient extends User {
     private double heightInFeet;
     private ArrayList<Record> records;
 
+    private Patient thisPatient;
+
     private ArrayList<Medication> medications;
 
     public Patient(int userID, String email, String phoneNumber, String birthDate, String sex, double weightInPounds, double heightInFeet, ArrayList<Record> records, ArrayList<Medication> medications)
@@ -21,6 +23,7 @@ public class Patient extends User {
         this.heightInFeet = heightInFeet;
         this.records = records;
         this.medications = medications;
+        thisPatient = this;
     }
 
 
@@ -40,6 +43,7 @@ public class Patient extends User {
      */
     public void setBirthDate(String birthDate) {
         this.birthDate = birthDate;
+        patientMemento();
     }
 
     /**
@@ -58,6 +62,7 @@ public class Patient extends User {
      */
     public void setSex(String sex) {
         this.sex = sex;
+        patientMemento();
     }
 
     /**
@@ -76,6 +81,7 @@ public class Patient extends User {
      */
     public void setWeightInPounds(double weightInPounds) {
         this.weightInPounds = weightInPounds;
+        patientMemento();
     }
 
     /**
@@ -94,6 +100,7 @@ public class Patient extends User {
      */
     public void setHeightInFeet(double heightInFeet) {
         this.heightInFeet = heightInFeet;
+        patientMemento();
     }
 
     /**
@@ -101,6 +108,7 @@ public class Patient extends User {
      *
      * @return A List of health records for the person.
      */
+
     public List<Record> getRecords() {
         return records;
     }
@@ -124,6 +132,7 @@ public class Patient extends User {
     public Boolean addRecord(Record record) {
         // Implementation details...
         records.add(record);
+        patientMemento();
         return true;
     }
 
@@ -137,7 +146,25 @@ public class Patient extends User {
     public Boolean addMedication(Medication medication) {
         // Implementation details...
         medications.add(medication);
+        patientMemento();
         return true;
+    }
+
+    /**
+     * Method that will export a copy of the patient record to the database anytime it is updated.
+     */
+    public void patientMemento(){
+
+       // copy of the current patient that will be saved
+        Patient patientCopy = thisPatient;
+
+        //SQL Statement to export the copy of the patient will be added here when the use case is implemented
+
+        /*
+        All other methods that update any information about the patient call this method to ensure that changes
+        are saved
+         */
+
     }
 
 }
