@@ -6,5 +6,6 @@ Carlos contributions: Created stubs for Medication class, record class, and info
 
 April 7 group contributions:
 youssef boshra-riad (yzb5142) contribution: 
+ben oleynik (bdo5077) contribution: set up sql datasource, added driver, added Jconnector, added CaregiverInfo controller and view.
 
 SQL URL: jdbc:mysql://localhost:3306
