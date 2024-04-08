@@ -1,4 +1,4 @@
-package Models;
+package Views;
 
 public class InformationView {
     User authProfile;

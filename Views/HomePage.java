@@ -1,6 +1,6 @@
-package View;
+package Views;
 
-import Controller.MIController;
+import Controllers.HomePageController;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -16,7 +16,7 @@ public class HomePage {
     public JButton quitButton;
 
     public HomePage() {
-        MIController controller = new MIController(this);
+        HomePageController controller = new HomePageController(this);
         // Attach action listeners to buttons
         viewMedicalInformationButton.addActionListener(new ActionListener() {
             @Override

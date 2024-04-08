@@ -1,10 +1,10 @@
 import java.sql.*;
 
+import Views.HomePage; // Add missing import statement
+
 public class Main {
 
     public static void main(String[] args) {
-        String pass = "fake_password";
-        System.out.println(pass);
-        System.out.println("Hashed pass: " + pass.hashCode());
+        HomePage homePage = new HomePage();
     }
 }

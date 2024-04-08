@@ -1,16 +1,16 @@
-package Controller;
+package Controllers;
 
-import View.CaregiverInfoView;
+import Views.CaregiverInfoView;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class HomePagecontroller {
-    private View.HomePage view;
+public class HomePageController {
+    private Views.HomePage view;
     private CaregiverInfoView caregiverInfoView;
 
-    public HomePagecontroller(View.HomePage view) {this.view = view;
+    public HomePageController(Views.HomePage view) {this.view = view;
         this.caregiverInfoView = new CaregiverInfoView(); // Instantiate the CaregiverInfoView
 
         // Attach action listeners to buttons
