@@ -10,4 +10,6 @@ youssef boshra-riad (yzb5142) contribution: Authenticator implementation as sing
 
 ben oleynik (bdo5077) contribution: set up sql datasource, added driver, added Jconnector, added CaregiverInfo controller and view.
 
+Carlos contribution: Added Homepage view, added Homepage Controller, Created Homagepage GUI
+
 SQL URL: jdbc:mysql://localhost:3306
